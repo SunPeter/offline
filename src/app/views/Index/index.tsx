@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
-import './index.css';
+import './index.scss';
 
 class Index extends React.Component<any, any> {
   public componentDidMount() {
@@ -17,7 +17,7 @@ class Index extends React.Component<any, any> {
   public render() {
     const { count } = this.props;
     return (
-      <div>
+      <div className="index-container">
         <h1>{count}</h1>
         <button onClick={this._increase}>add</button>
         <button onClick={this._increaseSync}>addSync</button>

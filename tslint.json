@@ -17,6 +17,7 @@
     "no-internal-module": false,
     "no-namespace": false,
     "no-submodule-imports": false,
-    "no-mergeable-namespace": false
+    "no-mergeable-namespace": false,
+    "noImplicitAny": false
   }
 }

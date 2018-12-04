@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import Index from './views/Index';
 import ErrorPage from './views/ErrorPage';
 
-export default class App extends React.Component {
+export default class Router extends React.Component {
   public render() {
     return (
       <Switch>

@@ -4,12 +4,12 @@ import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'connected-react-router';
 import history from './app/utils/history';
 import store from './app/store';
-import App from './app/App';
+import Router from './app/Router';
 
 ReactDOM.render(
   <Provider store={store}>
     <ConnectedRouter history={history}>
-      <App />
+      <Router />
     </ConnectedRouter>
   </Provider>,
   document.getElementById('root') as HTMLElement
