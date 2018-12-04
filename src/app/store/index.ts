@@ -3,10 +3,11 @@ import { routerMiddleware, connectRouter } from 'connected-react-router';
 import { createStore } from 'redux';
 import history from '../utils/history';
 import * as models from '../models';
+import { createDemoPlugin } from './plugins/demo';
 
 const store = init({
   name: 'appStore',
-  plugins: [],
+  plugins: [createDemoPlugin()],
   models,
   redux: {
     middlewares: [routerMiddleware(history)],
